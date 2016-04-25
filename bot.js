@@ -1,3 +1,12 @@
+/*******************************************
+* Author: MrDraug
+* URL: https://draug.me
+* URL2: https://loveandcoffee.io
+* Licence: GNU General Public License (GPL) v.3
+* Twitter: @draugdev
+* Email: awolff@draug.me
+*******************************************/
+
 'use strict';
 
 var TelegramBot = require('node-telegram-bot-api');
