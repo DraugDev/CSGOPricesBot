@@ -2,14 +2,10 @@
 
 var TelegramBot = require('node-telegram-bot-api');
 
-
 /* Get you Telegram Bot Token @BotFater*/
 var TOKEN = 'TOKEN';
 /* Create your own API Token on https://steamapi.loveandcoffee.io */
-var STEAM_API_TOKEN = 'STEAM_API_TOKEN' // Designer
-
-
-
+var STEAM_API_TOKEN = 'STEAM_API_TOKEN'
 
 var request = require("request")
 
@@ -54,23 +50,20 @@ bot.on('message', function(msg){
 bot.on('message', function(msg){
   var chatId = msg.chat.id;
   var name;
-  console.log(msg);
   if(msg.text == name) 
-    console.log(STEAM_PRICE_API.format(msg.text, STEAM_API_TOKEN))
-
     var url = STEAM_PRICE_API.format(msg.text, STEAM_API_TOKEN)
-
     request({
         url: url,
         json: true
     }, function (error, response, body) {
         if (!error && response.statusCode === 200) {
-          console.log(body) // Print the json response
           bot.sendMessage(chatId, body['market_hash_name'] + " - " + body['prices']['lowest'] + "$");
         }
     })
 });
 
+
+/* Dont Die BITCH!*/
 process.on('uncaughtException', function (err) {
   console.log('Caught exception: ' + err);
 });
