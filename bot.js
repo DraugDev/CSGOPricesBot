@@ -62,9 +62,10 @@ bot.on('message', function(msg){
   var chatId = msg.chat.id;
   var name;
   if(msg.text == name) 
-    var url = STEAM_PRICE_API.format(msg.text, STEAM_API_TOKEN);
+    var url = '';
+    url = STEAM_PRICE_API.format(msg.text, STEAM_API_TOKEN);
     request({
-        url: STEAM_PRICE_API.format(msg.text, STEAM_API_TOKEN),
+        url: url,
         json: true
     }, function(error, response, data){
         if (!error && response.statusCode === 200) 
