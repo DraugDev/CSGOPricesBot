@@ -11,3 +11,6 @@
 
 ## Have fun
 You are allowed to use this code to make this bot better. 
+
+## LICENCE
+GNU General Public License (GPL) v.3
