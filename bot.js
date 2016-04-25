@@ -69,7 +69,7 @@ bot.on('message', function(msg){
         json: true
     }, function(error, response, data){
         if (!error && response.statusCode === 200) 
-          bot.sendMessage(chatId, data['market_hash_name'] + " - " + data['prices']['lowest'] + "$");
+          bot.sendMessage(chatId, data['market_hash_name'] + " - " + data['prices']['last'] + "$");
     })
 });
 
