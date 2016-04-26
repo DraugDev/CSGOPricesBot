@@ -12,6 +12,11 @@ AK-47%20%7C%20Fuel%20Injector%20(Factory%20New). It does't metter.
 
 I will add other ways to type a name, like "AK-47 Fuel Injector fn" later. Or you can help me to do this. :) 
 
+## Commands
+* /start - tell the bot you are there.
+* /status - bot returns you some informations about CSGO servers. Answer: Server status: normal. Online Servers: 214613. Online Players: 400262. Players Searching: 4201.
+
+
 ## How to install
 * First of all you need to install [@node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api).
 * Then clone this code 
