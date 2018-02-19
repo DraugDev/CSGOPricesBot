@@ -15,16 +15,14 @@ var TelegramBot = require('node-telegram-bot-api');
 var TOKEN = '';
 var bot = new TelegramBot(TOKEN, {polling: {timeout: 1, interval: 100}});
 
-/* Create your own API Token on https://steamapi.loveandcoffee.io */
+/* Create your own API Token on https://steamapi.io */
 var STEAM_API_TOKEN = '';
-var BACKUP_API_TOKEN = '';
 
 /* Create your own Steam API Token on https://steamcommunity.com/dev/apikey */
 var STEAM_OF_API_TOKEN = '';
 
 /* Steam Price Api URL */
-var STEAM_PRICE_API = 'https://steamapi.loveandcoffee.io/api/v1/prices/730/{0}?apikey={1}';
-var BACKUP_PRICE_API = 'http://csgo.steamlytics.xyz/api/v1/prices/{0}?key={1}';
+var STEAM_PRICE_API = 'https://api.steamapi.io/api/account?key={1}';
 
 /* Steam API URL's */
 var STEAM_SERVER_STATUS_API = 'https://api.steampowered.com/ICSGOServers_730/GetGameServersStatus/v1/?key={0}';
